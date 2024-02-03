@@ -14,4 +14,10 @@ print (f"Word count: {tp.word_count(textstr)}")
 
 print (f"Character count: {tp.character_count(textstr)}")
 
+print (f"Unique words: {tp.unique_words(textstr)}")
 
+print (f"Avg word length: {tp.average_word_length(textstr)}")
+
+word = input("Please enter a word to find occurrences of it: ")
+
+print (f"Occurences: {tp.find_occurrences(textstr,word)}")
