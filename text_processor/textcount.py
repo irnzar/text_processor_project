@@ -21,7 +21,7 @@ def average_word_length(text):
     for c in text:
         if c not in [",","!",":",";"," "]:
            letter_count+=1
-    avg_word_length = round (letter_count/word_count,0)
+    avg_word_length = round(letter_count/word_count,0)
     return avg_word_length
 
 def find_occurrences (text, keyword):

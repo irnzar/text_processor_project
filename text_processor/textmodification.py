@@ -2,7 +2,7 @@
 def remove_punctuation(text):
     textwopunctuation = ""
     for c in text:
-        if c not in [",","!",":",";"]:
+        if c not in [",","!",":",";", "?"]:
            textwopunctuation = textwopunctuation+c
     return textwopunctuation
 
@@ -14,6 +14,9 @@ def tokenize_text(text3):
     return text3.split()
 
 def sentence_tokenize(text4):
+    text4.replace("!", ".")
+    text4.replace("?", ".")  
+    print(text4)
     return text4.split(".")
 
 
